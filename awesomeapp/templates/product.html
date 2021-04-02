@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AWESOME APP</title>
+    <head>
+    <body>
+        <h1>Welcome to My Game Collection.</h1>
+        <h2>Games</h2>>
+        {% for product in product_list %}
+            <p><strong>Name:</strong> {{product.name}}</p>
+            <p><strong>Price:</strong> {{product.price}}</p>
+            {% if product.category %}
+                <p><strong>Category:</strong>> {{product.category}}</p>
+            {% endif %}
+            <br>
+        {% endfor %}
+    </body>
+</html> 
